@@ -1,0 +1,3 @@
+[submodule "hypertext.ua"]
+	path = hypertext.ua
+	url = https://github.com/donstenzel/hypertext.ua
