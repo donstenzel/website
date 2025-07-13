@@ -1,5 +1,9 @@
-~ "../base" ~ Layout
+~ "../hypertext.ua/html"
+  ~ A Div H₁ H₂
+~ "../base" ~ Layout UiuaCode
 
-# code type content ? payload
+# code type content ? headers payload
 # Route! GET /
-Index ← "200 OK" "text/html" utf₈ Layout {}⋅{}
+Index ← Layout {}⋅⋅{
+  ⬚∘Div {"class" "section"} {}
+}

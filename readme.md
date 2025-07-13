@@ -1,13 +1,12 @@
 # Personal website
 
-Uiua website and stuff
+This is the source code of my personal website.
+It is written entirely in Uiua, using a server,
+attribute based routing and html templating via
+[Hypertext.ua](https://github.com/donstenzel/hypertext.ua).
 
-Website related functionality via [Hypertext.ua](https://github.com/donstenzel/hypertext.ua)
+For the styling I use [Cirrus UI](https://cirrus-ui.com/),
+which offers pre-defined classes.
 
-[Material Design Lite](https://getmdl.io/) & [Icons](https://fonts.google.com/icons)
-
-[HTMX](https://htmx.org/)
-
-[SQLite3](https://www.sqlite.org/) via [Uiqlite](https://github.com/donstenzel/uiqlite)
-
+Maybe later: [HTMX](https://htmx.org/)
 

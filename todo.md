@@ -1,0 +1,7 @@
+- [x] HTTPS / TLS
+- [ ] print timestamps
+- [ ] persistent logging
+- [ ] about page
+- [ ] contact page
+- [ ] landing page
+- [ ] mobile nav menu
