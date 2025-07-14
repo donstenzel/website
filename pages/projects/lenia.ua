@@ -1,6 +1,6 @@
 ~ "../../hypertext.ua/html.ua"
   ~ Code Div H₁ H₂ LI P UL
-~ "../../base" ~ Layout UiuaCode
+~ "../base" ~ Layout UiuaCode
 
 # code type content ? headers payload
 # Route! GET /projects/lenia

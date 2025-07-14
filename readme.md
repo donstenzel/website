@@ -8,5 +8,5 @@ attribute based routing and html templating via
 For the styling I use [Cirrus UI](https://cirrus-ui.com/),
 which offers pre-defined classes.
 
-Maybe later: [HTMX](https://htmx.org/)
+Some interactive components using [HTMX](https://htmx.org/).
 

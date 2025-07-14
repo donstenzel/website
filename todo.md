@@ -1,7 +1,9 @@
 - [x] HTTPS / TLS
-- [ ] print timestamps
-- [ ] persistent logging
-- [ ] about page
-- [ ] contact page
+- [ ] serve port 8443→443 so no port is required
+- [x] print timestamps
+- [ ] persistent logging:
+      open a log file and write to it instead of printing
+- [x] about page
+- [x] contact page
 - [ ] landing page
-- [ ] mobile nav menu
+- [x] mobile nav menu

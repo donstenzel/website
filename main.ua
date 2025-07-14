@@ -1,26 +1,25 @@
 # Experimental!
-~ "hypertext.ua/server"
+S ~ "hypertext.ua/server"
   ~ Assets Cfg Files
   ~ MakeRoutes! Run‼
 
 MakeRoutes!"pages"
 
-As ← ⍚⊂@/ Files {"htmx.min.js" "assets"}
+As ← ⍚⊂@/ Files {"htmx.min.js" "assets" "favicon.ico"}
 
-𝓡 ← ⍣(
-  Routes
-| Assets As
-| ⍤⊙0 ⋅$"No route/asset declared: _"
+ρ ← ⍣(
+  Assets As ⊙⊙⋅◌
+| Routes
 )
 
-𝓔 ← ⨬(
+ε ← ⨬(
   "500 Internal Server Error" "text/plain" utf₈
 | "404 Not Found" "text/plain" utf₈ "Not Found"
-)⊢⊸⌕"No route/asset declared:"
+)⊸≍"No route declared"
 
 Cfg ⊚4 8e3 ⊃(
-  Cert: &fras "data/cert.pem"
-| Key: &fras "data/key.pem"
+  Cert: "data/cert.pem"
+| Key: "data/key.pem"
 )
 
-Run‼(𝓡|𝓔)
+Run‼ρ ε

@@ -1,21 +1,36 @@
-~ "../../base" ~ Layout
+~ "../base" ~ Layout
 ~ "../../hypertext.ua/html"
   ~ A Div H₁ H₂ Img P Style
 
+Image ← Style $$ @scope { .card-image { background-image: url('_'); } }
+
+# style ? time images
+Slide ← (
+  Frames ← (
+    ⊃⧻⍚$"{ background-image: url('_'); }"
+    /$"_\n_"⍚$"    _ _"⊓(⬚@\s≡$"_%"⌊×1e2÷⤙⊂⊸⇡|⊂⟜⊢)
+  )
+
+  ⊙Frames
+  Style $$ @scope {
+        $$   .card-image {
+        $$     animation: slideshow _s ease-in-out infinite;
+        $$   }
+        $$   
+        $$   @keyframes slideshow {
+        $$ _
+        $$   }
+        $$ }
+)
 # card ? title link img desc
 ProjectCard ← ⬚∘Div [{"class" "card"} {"style" "min-width: 350px; max-width: 350px;"}] ⊓{
   ⬚∘Div {"class" "card__container"} ⊓{
-    ⬚∘Div {"class" "card__title-container"} ⬚∘P {"class" "title font-bold"}
-  | ⬚∘Div [{"class" "card-image"} {"style" $"background-image: url('_')"}] ⊙{}
+    ⬚∘Div [{"class" "card-image"}] {} ∘
+  | ⬚∘Div {"class" "card__title-container"} ⬚∘P {"class" "title u-text-center"}
   }
 | ⬚∘Div {"class" "content u-text-center"} P
 | ⬚∘Div {"class" "card__action-bar u-text-center"} ⬚∘A [{"class" "u u-LR"} {"href" ∘}] ⊙"Read more..."
-} ⊙⤚⋅⊙∘
-
-# start with a small section on what to expect
-# lots of uiua
-# programming languages
-# then cards per project with link
+} ˜∩:
 
 # Route! GET /projects
 Get ← Layout {}⋅⋅{
@@ -31,16 +46,16 @@ Get ← Layout {}⋅⋅{
   ⬚∘Div {"class" "section"} {
     H₂ "Find out more about..."
     ⬚∘Div {"class" "u-flex u-flex-wrap u-gap-4 u-items-center"} {
-      ProjectCard "Lenia" "/projects/lenia" "/assets/orbium.gif"
+      ProjectCard "Lenia" "/projects/lenia" Image "/assets/orbium.gif"
       $ Implementing Lenia, a state,
       $ time, and space continuous cellular
       $ automaton.
     
-      ProjectCard "Uiua Games" "/projects/uiua-games" "/assets/bejeweled.gif"
+      ProjectCard "Uiua Games" "/projects/uiua-games" Image "/assets/bejeweled.gif"
       $ Creating video games in Uiua using
       $ the Iris library.
     
-      ProjectCard "Web" "/projects/web" ""
+      ProjectCard "Web" "/projects/web" Slide 15 {"/assets/web-sample-01.png" "/assets/web-sample-02.png" "/assets/web-sample-03.png"}
       $ Tools for website creation in Uiua,
       $ like templating and routing.
     }
