@@ -13,7 +13,7 @@ HeaderInactive ← (
     ⬚∘Div {"class" "header-brand"} {
       ⬚∘Div {"class" "nav-item no-hover"} ⬚∘A {"href" "/"} H₆ "dev.stenzel"
       ⬚∘Div [{"class" "nav-item nav-btn"}
-             {"hx-get" "htmx/header/active"}
+             {"hx-get" "/htmx/header/active"}
              {"hx-target" "#header"}
              {"hx-swap" "outerHTML"}
       ] {Span {} Span {} Span {}}
@@ -46,7 +46,7 @@ HeaderActive ← (
     ⬚∘Div {"class" "header-brand"} {
       ⬚∘Div {"class" "nav-item no-hover"} ⬚∘A {"href" "/"} H₆ "dev.stenzel"
       ⬚∘Div [{"class" "nav-item nav-btn active"}
-             {"hx-get" "htmx/header/inactive"}
+             {"hx-get" "/htmx/header/inactive"}
              {"hx-target" "#header"}
              {"hx-swap" "outerHTML"}
       ] {Span {} Span {} Span {}}
@@ -85,7 +85,11 @@ Layout ← Doc Html⊙{
           {"href" "https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700"}]
   
     # HTMX
-    ⬚[{"src" "/htmx.min.js"}]Script {}
+    ⬚∘Script {"src" "/htmx.min.js"} {}
+    # Deindenting of code blocks
+    ⬚∘Script [{"src" "/deindent.js"}
+              {"defer" ""}
+    ] {}
   
     # Icon
     Link [{"rel" "icon"}
@@ -130,5 +134,5 @@ Layout ← Doc Html⊙{
   }
 }
 
-UiuaCode ← Pre ⬚∘Code ⊂⍣°◌[] [{"style" "font-family: Uiua386"}]
+UiuaCode ← Pre □ ⬚∘Code ⊂⍣°◌[] [{"style" "font-family: Uiua386"}]
 # &p Layout {} {}

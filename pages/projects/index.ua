@@ -16,21 +16,27 @@ Slide ← (
         $$   .card-image {
         $$     animation: slideshow _s ease-in-out infinite;
         $$   }
-        $$   
         $$   @keyframes slideshow {
         $$ _
         $$   }
         $$ }
 )
+
 # card ? title link img desc
-ProjectCard ← ⬚∘Div [{"class" "card"} {"style" "min-width: 350px; max-width: 350px;"}] ⊓{
-  ⬚∘Div {"class" "card__container"} ⊓{
-    ⬚∘Div [{"class" "card-image"}] {} ∘
-  | ⬚∘Div {"class" "card__title-container"} ⬚∘P {"class" "title u-text-center"}
-  }
-| ⬚∘Div {"class" "content u-text-center"} P
-| ⬚∘Div {"class" "card__action-bar u-text-center"} ⬚∘A [{"class" "u u-LR"} {"href" ∘}] ⊙"Read more..."
-} ˜∩:
+ProjectCard ← (
+  ⬚∘Div [{"class" "card"}
+         {"style" "min-width: 350px; max-width: 350px;"}
+  ] ⊓{
+    ⬚∘Div {"class" "card__container"} ⊓{
+      ⬚∘Div {"class" "card-image"} {} ∘
+    | ⬚∘P {"class" "title u-text-center"}
+      ⬚∘Div {"class" "card__title-container"}
+    }
+  | ⬚∘Div {"class" "content u-text-center"} P
+  | ⬚∘A [{"class" "u u-LR"} {"href" ∘}] ⊙"Read more..."
+    ⬚∘Div {"class" "card__action-bar u-text-center"}
+  } ˜∩:
+)
 
 # Route! GET /projects
 Get ← Layout {}⋅⋅{

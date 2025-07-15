@@ -5,7 +5,7 @@ S ~ "hypertext.ua/server"
 
 MakeRoutes!"pages"
 
-As ← ⍚⊂@/ Files {"htmx.min.js" "assets" "favicon.ico"}
+As ← ⍚⊂@/ Files {"htmx.min.js" "assets" "favicon.ico" "deindent.js"}
 
 ρ ← ⍣(
   Assets As ⊙⊙⋅◌
@@ -17,7 +17,7 @@ As ← ⍚⊂@/ Files {"htmx.min.js" "assets" "favicon.ico"}
 | "404 Not Found" "text/plain" utf₈ "Not Found"
 )⊸≍"No route declared"
 
-Cfg ⊚4 8e3 ⊃(
+Cfg ⊚4 8443 ⊃(
   Cert: "data/cert.pem"
 | Key: "data/key.pem"
 )
