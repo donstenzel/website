@@ -1,6 +1,6 @@
 document.querySelectorAll('pre > code').forEach(code => {
   let lines = code.textContent
-    .split('\n')
+    .split('\n');
 
   if (lines.length < 2) return;
 

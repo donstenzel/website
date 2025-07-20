@@ -18,8 +18,8 @@ As ← ⍚⊂@/ Files {"htmx.min.js" "assets" "favicon.ico" "deindent.js"}
 )⊸≍"No route declared"
 
 Cfg ⊚4 8443 ⊃(
-  Cert: "data/cert.pem"
-| Key: "data/key.pem"
+  Cert: "data/cert.cer"
+| Key: "data/key.key"
 )
 
 Run‼ρ ε

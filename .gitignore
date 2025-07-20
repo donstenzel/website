@@ -1,2 +1,4 @@
 uiua-modules
 *.pem
+*.key
+*.cer

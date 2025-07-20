@@ -134,5 +134,4 @@ Layout ← Doc Html⊙{
   }
 }
 
-UiuaCode ← Pre □ ⬚∘Code ⊂⍣°◌[] [{"style" "font-family: Uiua386"}]
-# &p Layout {} {}
+UiuaCode ← Pre □ ⬚∘Code ⊂⍣°◌[] {"style" "font-family: Uiua386"}

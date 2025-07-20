@@ -6,3 +6,4 @@
 - [ ] landing page
 - [x] mobile nav menu
 - [ ] page on the web stuff
+- [x] bejeweled
