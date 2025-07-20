@@ -75,10 +75,12 @@ It ← Layout {}⋅⋅{
     }
   
     ⬚∘Div {"class" "xl:col-4"} {
-      Img [{"class" "u-round-md"}
+      Img [{"class" "u-round-md u-shadow-lg"}
            {"src" "/assets/snake.gif"}]
     }
   }
+
+  ⬚∘Div {"class" "space space--xl"} {}
 
   H₃ $ Bejeweled
   ⬚∘Div {"class" "row"} {
@@ -133,7 +135,7 @@ It ← Layout {}⋅⋅{
     }
   
     ⬚∘Div {"class" "xl:col-4"} {
-      Img [{"class" "u-round-md"}
+      Img [{"class" "u-round-md u-shadow-lg"}
            {"src" "/assets/bejeweled.gif"}]
     }
   }

@@ -3,7 +3,7 @@
   ~ Code H₆ LI Main Nav Pre Span Style UL
 
 # code type data ? html
-Doc ← "200 OK" "text/html" utf₈
+Doc ← "200 OK" map∩□"Content-Type" "text/html" utf₈
 
 HeaderInactive ← (
   ⬚∘Div [{"class" "section header header-fixed u-unselectable header-light"}
