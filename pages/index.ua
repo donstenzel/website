@@ -2,9 +2,9 @@
   ~ A Div H₁ H₂ H₃ Img P
 ~ "base" ~ Layout UiuaCode
 
-# code type content ? headers payload
+# code type content ? request
 # Route! GET /
-Index ← Layout {}⋅⋅{
+Index ← Layout {}⋅{
   ⬚∘Div {"class" "u-center content m-2"} {
     ⬚∘Div {"class" "u-text-center"} {
       H₁ $ DEV.STENZEL

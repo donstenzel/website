@@ -39,7 +39,7 @@ ProjectCard ← (
 )
 
 # Route! GET /projects
-Get ← Layout {}⋅⋅{
+Get ← Layout {}⋅{
   ⬚∘Div {"class" "section"} {
     H₁ "My personal projects"
   

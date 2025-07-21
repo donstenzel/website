@@ -1,20 +1,20 @@
 # Experimental!
 S ~ "hypertext.ua/server"
-  ~ Assets Cfg Files
+  ~ Assets Cfg Files Req
   ~ MakeRoutes! Run‼
 
 MakeRoutes!"pages"
 
-As ← ⍚⊂@/ Files {"htmx.min.js" "assets" "favicon.ico" "deindent.js"}
+As ← ⍚⊂@/ Files {"assets" "deindent.js" "favicon.ico" "htmx.min.js"}
 
 ρ ← ⍣(
-  Assets As ⊙⊙⋅◌
+  Assets As
 | Routes
 )
 
 ε ← ⨬(
-  "500 Internal Server Error" "text/plain" utf₈
-| "404 Not Found" "text/plain" utf₈ "Not Found"
+  "500 Internal Server Error" map∩□"Content-Type" "text/plain" utf₈
+| "404 Not Found" map∩□"Content-Type" "text/plain" utf₈ "Not Found"
 )⊸≍"No route declared"
 
 Cfg ⊚4 8443 ⊃(

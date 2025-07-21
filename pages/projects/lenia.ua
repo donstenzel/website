@@ -18,9 +18,9 @@ ExampleCard ← (
   } :
 )
 
-# code type content ? headers payload
+# code type content ? request
 # Route! GET /projects/lenia
-It ← Layout {}⋅⋅{
+It ← Layout {}⋅{
   H₁ "Lenia in Uiua"
 
   P $ I initially learned of Conway's Game of Life, and

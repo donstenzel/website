@@ -36,7 +36,7 @@ HeaderInactive ← (
 )
 
 # Route! GET /htmx/header/inactive
-Deactivate ← Doc HeaderInactive ⋅◌
+Deactivate ← Doc HeaderInactive ◌
 
 HeaderActive ← (
   ⬚∘Div [{"class" "section header header-fixed u-unselectable header-light"}
@@ -69,7 +69,7 @@ HeaderActive ← (
 )
 
 # Route! GET /htmx/header/active
-Activate ← Doc HeaderActive ⋅◌
+Activate ← Doc HeaderActive ◌
 
 # code type page ? head body
 Layout ← Doc Html⊙{

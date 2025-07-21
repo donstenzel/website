@@ -3,7 +3,7 @@
 ~ "base.ua" ~ Layout
 
 # Route! GET /contact
-Get ← Layout {}⋅⋅{
+Get ← Layout {}⋅{
   H₁ "Contact me"
 
   P $ If you wish to contact me, there are a couple of ways.

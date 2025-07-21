@@ -2,9 +2,9 @@
   ~ A B Code Div H₁ H₂ H₃ H₄ Img LI P Span UL
 ~ "../base" ~ Layout
 
-# code type content ? headers payload
+# code type content ? request
 # Route! GET /projects/uiua-games
-It ← Layout {}⋅⋅{
+It ← Layout {}⋅{
   H₁ "Video games in Uiua"
 
   P {

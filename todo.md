@@ -3,7 +3,7 @@
 - [x] print timestamps
 - [x] about page
 - [x] contact page
-- [ ] landing page
+- [x] landing page
 - [x] mobile nav menu
 - [ ] page on the web stuff
 - [x] bejeweled

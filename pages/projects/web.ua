@@ -1,5 +1,5 @@
 ~ "../base" ~ Layout
 
-# code type content ? headers payload
+# code type content ? request
 # Route! GET /projects/web
-It ← Layout {}⋅⋅{}
+It ← Layout {}⋅{}

@@ -3,7 +3,7 @@
 ~ "base.ua" ~ Layout
 
 # Route! GET /about-me
-Get ← Layout {}⋅⋅{
+Get ← Layout {}⋅{
   H₁ "About me"
 
   P $ I am a recreational programmer from Germany. I love
