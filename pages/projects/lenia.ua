@@ -113,7 +113,7 @@ It ← Layout {}⋅{
       P $ All inputs can be supplied once or per kernel.
     }
   
-    ⬚∘Div {"class" "xl:col-6"}
+    ⬚∘Div {"class" "xl:col"}
     UiuaCode $ # W ? W R β μ σ T
              $ U ← ↥₀↧₁ +⟜(
              $   ˜∩:⊃⧻¤
@@ -176,7 +176,7 @@ It ← Layout {}⋅{
       }
     }
   
-    ⬚∘Div {"class" "xl:col-6"} {
+    ⬚∘Div {"class" "xl:col"} {
       UiuaCode $ Kernel ← memo(
                $   ×◡⋅⧻ ÷⊃⋅×Grid
                $   ×⊃(⬚0⊏⌊|Bell ⊙0.5 ⊙0.15 ◿₁)
@@ -200,42 +200,3 @@ It ← Layout {}⋅{
     $ being able to collide and remain alive.
   }
 }
-
-# $ # In the multi channel version, the output is
-# $ # inherently colored.
-# $ ┌─╴Multi
-# $   # Ws R ρ β
-# $   Kernel ← memo(
-# $     ×◡⋅⧻ ÷⊃⋅×Grid
-# $     ×⊃(⬚0⊏⌊|Bell ⊙0.5 ⊙0.15 ◿₁)
-# $     Shift ÷/+⊸♭
-# $   )
-# $ 
-# $   # The parameters are as follows:
-# $   #  - Cs ← channels = current state
-# $   #  - C₀ ← input channel indeces
-# $   #  - T ← time scale
-# $   #  - R ← kernel radius
-# $   #  - ρ ← relative kernel radii
-# $   #  - β ← kernel peaks
-# $   #  - μ, σ, H ← growth centers, -widths & -heights
-# $   #  - C₁ ← output channel indeces
-# $   # Cs ? Cs C₀ R ρ β μ σ H C₁ T
-# $   U ← ↥₀↧₁ +⟜(
-# $     ⧻⤚⊓⊢⊙⊙∘˜⊏
-# $     ≡(Conv◇Kernel)
-# $     ˜÷˜⊕/+×-₁×₂Bell
-# $   )
-# $ 
-# $   # The parameters are as follows:
-# $   #  - Cs ← channels = current state
-# $   #  - C₀ ← input channel indeces
-# $   #  - T ← time scale
-# $   #  - R ← kernel radius
-# $   #  - ρ ← relative kernel radius
-# $   #  - β ← kernel peaks
-# $   #  - μ, σ, H ← growth centers, -widths & -heights
-# $   #  - C₁ ← output channel indeces
-# $   # anim ? frames Cs C₀ R ρ β μ σ H C₁ T
-# $   Sim ← ⍥⊃⊸₉U⍉
-# $ └─╴
